@@ -13,7 +13,6 @@ public class Team {
         this.height = height;
         this.age = age;
         this.position = position;
-        System.out.println("Construtor Team completo ATIVO");
     }
 
     public String getName(){
