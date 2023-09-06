@@ -1,8 +1,8 @@
 /*
 - Modificadores. OK
 - Encapsulamento. OK
-- Herança.
-- Polimorfismo
+- Herança. OK
+- Polimorfismo 
  */
 public class Execute {
     public static void main(String[] args) {
@@ -13,8 +13,6 @@ public class Execute {
         playTeam[3] = new Team("Toby", 2.05f, 28, "Middle Blocker");
         playTeam[4] = new Team("Jayce",1.78f, 21, "Outside Setter");
         playTeam[5] = new Team("Poyt", 1.73f, 25, "Setter");
-        for (int i=0;i<playTeam.length;i++){
-            System.out.println("\nNome: "+playTeam[i].getName()+"\t" + "\tAltura: "+ playTeam[i].getHeight());
-        }
+        
     }
 }
