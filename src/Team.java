@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Team {
     private String name;
     private float height;
@@ -13,6 +15,14 @@ public class Team {
         this.height = height;
         this.age = age;
         this.position = position;
+    }
+
+    public int changeNamePlayer(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite o numero do jogador que deseja alterar o nome: ");
+        int numero = input.nextInt();
+        input.close();
+        return numero;
     }
 
     public String getName(){

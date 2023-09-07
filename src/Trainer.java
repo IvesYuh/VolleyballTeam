@@ -1,7 +1,9 @@
+
 public class Trainer extends Team{
 
     private String nameTeam;
     private String rank;
+
     public Trainer(){
     }
 

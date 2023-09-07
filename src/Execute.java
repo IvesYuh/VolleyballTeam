@@ -4,8 +4,11 @@
 - Herança. OK
 - Polimorfismo 
  */
+
 public class Execute {
     public static void main(String[] args) {
+
+
         Trainer teamTrainer[] = new Trainer[7];
         teamTrainer[0] = new Trainer("Digao", 1.98f, 52, "Trainer", "SoulFighter", "10/10");
         teamTrainer[1] = new Trainer("Doug", 1.87f, 22, "Setter", "SoulFighter", "8/10");
@@ -17,5 +20,6 @@ public class Execute {
         for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
+
     }
 }
