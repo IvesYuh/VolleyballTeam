@@ -8,6 +8,7 @@
 public class Execute {
     public static void main(String[] args) {
 
+        Team team = new Team(null, 0, 0, null);
 
         Trainer teamTrainer[] = new Trainer[7];
         teamTrainer[0] = new Trainer("Digao", 1.98f, 52, "Trainer", "SoulFighter", "10/10");
@@ -17,6 +18,9 @@ public class Execute {
         teamTrainer[4] = new Trainer("Jayce", 2.05f, 24, "Middle Blocker", "SoulFighter", "7/10");
         teamTrainer[5] = new Trainer("Poppy", 2.12f, 22, "Side Hitter", "SoulFighter", "9/10");
         teamTrainer[6] = new Trainer("Yout", 1.75f, 28, "Outside Setter", "SoulFighter","8/10");
+
+        teamTrainer = team.changePositionTrainer(teamTrainer);
+
         for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
