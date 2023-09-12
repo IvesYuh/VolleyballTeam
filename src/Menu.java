@@ -1,3 +1,7 @@
-public class Menu{
+public class Menu {
+    public Menu(){
+
+    }
+
     
 }

@@ -23,12 +23,12 @@ public class Team {
         int number = input.nextInt();
         System.out.println("Digite o nome do novo jogador: ");
         String changeName = input.next();
-        newTeamTrainer [number].setName(changeName);
+        newTeamTrainer[number].setName(changeName);
         input.close();
         return newTeamTrainer;
     }
 
-    public Trainer[] changeHeighTrainer(Trainer[] newTeamTrainer){
+    public Trainer[] changeHeighPlayer(Trainer[] newTeamTrainer){
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o numero do jogador que deseja alterar a altura: ");
         int number = input.nextInt();
@@ -39,7 +39,7 @@ public class Team {
         return newTeamTrainer;
     }
 
-    public Trainer[] changeAgeTrainer(Trainer[] newTeamTrainer){
+    public Trainer[] changeAgePlayer(Trainer[] newTeamTrainer){
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o numero do jogador que deseja alterar a idade: ");
         int number = input.nextInt();
@@ -50,7 +50,7 @@ public class Team {
         return newTeamTrainer;
     }
 
-    public Trainer[] changePositionTrainer(Trainer[] newTeamTrainer){
+    public Trainer[] changePositionPlayer(Trainer[] newTeamTrainer){
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o numero do jogador que deseja a posição: ");
         int number = input.nextInt();
@@ -61,7 +61,7 @@ public class Team {
         return newTeamTrainer;
     }
 
-    public Trainer[] changeRankTrainer(Trainer[] newTeamTrainer){
+    public Trainer[] changeRankPlayer(Trainer[] newTeamTrainer){
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o numero do jogador que deseja o rank: ");
         int number = input.nextInt();

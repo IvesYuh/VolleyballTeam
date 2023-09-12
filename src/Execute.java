@@ -5,6 +5,8 @@
 - Polimorfismo 
  */
 
+import java.util.Scanner;
+
 public class Execute {
     public static void main(String[] args) {
 
@@ -19,11 +21,44 @@ public class Execute {
         teamTrainer[5] = new Trainer("Poppy", 2.12f, 22, "Side Hitter", "SoulFighter", "9/10");
         teamTrainer[6] = new Trainer("Yout", 1.75f, 28, "Outside Setter", "SoulFighter","8/10");
 
-        teamTrainer = team.changePositionTrainer(teamTrainer);
-
         for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
 
+        System.out.println("");
+        System.out.println("");
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite o numero da opcao que deseja executar: ");
+        System.out.println("1- Change Name");
+        System.out.println("2- Change height");
+        System.out.println("3- Change age");
+        System.out.println("4- Change Position");
+        System.out.println("5- Change Rank");
+        int select = input.nextInt();
+        switch (select) {
+            case 1:
+                team.changeNamePlayer(teamTrainer);
+                break;
+            case 2:
+                team.changeHeighPlayer(teamTrainer);
+                break;
+            case 3:
+            team.changeAgePlayer(teamTrainer);
+                break;
+            case 4:
+            team.changePositionPlayer(teamTrainer);
+                break;
+            case 5:
+            team.changeRankPlayer(teamTrainer);
+                break;
+        }
+        input.close();
     }
 }
+/*
+            teamTrainer = team.changePositionTrainer(teamTrainer);
+            for(int i=0; i<teamTrainer.length; i++){
+            System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
+        }
+ */
