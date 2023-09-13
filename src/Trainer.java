@@ -13,6 +13,11 @@ public class Trainer extends Team{
         this.rank = rank;
     }
 
+    @Override
+    public void play(){
+        System.out.println("O treinador está coordenando o time na jogada");
+    }
+
     public String getNameTeam(){
         return nameTeam;
     }

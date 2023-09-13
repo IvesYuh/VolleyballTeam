@@ -72,6 +72,10 @@ public class Team {
         return newTeamTrainer;
     }
 
+    public void play(){
+        System.out.println("O time está jogando");
+    }
+
     public String getName(){
         return name;
     }

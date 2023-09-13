@@ -11,6 +11,7 @@ public class Execute {
     public static void main(String[] args) {
         
         Team team = new Team(null, 0, 0, null);
+        Trainer trainer = new Trainer(null, 0, 0, null, null, null);
 
         Trainer teamTrainer[] = new Trainer[7];
         teamTrainer[0] = new Trainer("Digao", 1.98f, 52, "Trainer", "SoulFighter", "10/10");
@@ -24,13 +25,15 @@ public class Execute {
         for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
-        System.out.println("");
-        System.out.println("Digite o numero da opcao que deseja executar: ");
+        System.out.println("Digite o numero da opcao que deseja executar: \n");
         System.out.println("1- Change Name");
         System.out.println("2- Change height");
         System.out.println("3- Change age");
         System.out.println("4- Change Position");
         System.out.println("5- Change Rank");
+        System.out.println("---------------");
+        System.out.println("6- Are you trainer?");
+        System.out.println("7- Are you player?");
         Scanner input = new Scanner(System.in);
         int select = input.nextInt();
         System.out.println("");
@@ -42,7 +45,6 @@ public class Execute {
                 for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
-
                 break;
             case 2:
                 team.changeHeighPlayer(teamTrainer);
@@ -50,7 +52,6 @@ public class Execute {
                 for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
-
                 break;
             case 3:
             team.changeAgePlayer(teamTrainer);
@@ -58,7 +59,6 @@ public class Execute {
             for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
-
                 break;
             case 4:
             team.changePositionPlayer(teamTrainer);
@@ -66,7 +66,6 @@ public class Execute {
             for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
-
                 break;
             case 5:
             team.changeRankPlayer(teamTrainer);
@@ -74,7 +73,14 @@ public class Execute {
             for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
+                break;
 
+                case 6:
+                trainer.play();
+                break;
+
+                case 7:
+                team.play();
                 break;
         }
         input.close();
