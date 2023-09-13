@@ -24,7 +24,6 @@ public class Team {
         System.out.println("Digite o nome do novo jogador: ");
         String changeName = input.next();
         newTeamTrainer[number].setName(changeName);
-        input.close();
         return newTeamTrainer;
     }
 

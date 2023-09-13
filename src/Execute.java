@@ -2,7 +2,7 @@
 - Modificadores. OK
 - Encapsulamento. OK
 - Herança. OK
-- Polimorfismo 
+- Polimorfismo OK
  */
 
 import java.util.Scanner;
@@ -22,7 +22,11 @@ public class Execute {
         teamTrainer[5] = new Trainer("Poppy", 2.12f, 22, "Side Hitter", "SoulFighter", "9/10");
         teamTrainer[6] = new Trainer("Yout", 1.75f, 28, "Outside Setter", "SoulFighter","8/10");
 
-        for(int i=0; i<teamTrainer.length; i++){
+        Scanner input = new Scanner(System.in);
+        int select = 1;
+
+        while(select != 0){
+            for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
         }
         System.out.println("Digite o numero da opcao que deseja executar: \n");
@@ -34,17 +38,15 @@ public class Execute {
         System.out.println("---------------");
         System.out.println("6- Are you trainer?");
         System.out.println("7- Are you player?");
-        Scanner input = new Scanner(System.in);
-        int select = input.nextInt();
-        System.out.println("");
-
+        System.out.println("0- Exit");
+        select = input.nextInt();
+        
         switch (select) {
             case 1:
                 team.changeNamePlayer(teamTrainer);
-
                 for(int i=0; i<teamTrainer.length; i++){
             System.out.println(teamTrainer[i].getName() + " - " + teamTrainer[i].getHeight() + " - "  + teamTrainer[i].getAge() + " - "  + teamTrainer[i].getPosition() + " - "  + teamTrainer[i].getNameTeam() + " - "  + teamTrainer[i].getRank() + "\n");
-        }
+             }
                 break;
             case 2:
                 team.changeHeighPlayer(teamTrainer);
@@ -82,7 +84,11 @@ public class Execute {
                 case 7:
                 team.play();
                 break;
+
+                default:
+                System.out.println("Opcao invalida");
         }
-        input.close();
+        }
+        
     }
 }
