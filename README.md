@@ -1,29 +1,8 @@
 # VolleyballTeam
 
-Classe Execute.java:
+This Project I created three class: Execute; Team; Trainer.
 
-- Import Scanner.
-- 2 Objetos criados.
-- Vetor.
-- For (Printa a tabela no terminal).
-- Switch case MENU.
+Included modifier; encapsulation; polymorphism and heritage.
 
-Classe Team.java:
-- Declaração de variáveis.
-- Construtores.
-- Métodos.
-- Get / Set.
-
-Classe Trainer.java:
-- Declaração de variáveis.
-- Construtores.
-- Métodos. (Override)
-- Get / Set.
-
-/*
-- Modificadores. OK
-- Encapsulamento. OK
-- Herança. OK
-- Polimorfismo OK
- */
+Done for College Project.
 
