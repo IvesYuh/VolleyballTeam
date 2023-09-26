@@ -1,8 +1,8 @@
 # VolleyballTeam
 
-This Project I created three class: Execute; Team; Trainer.
+In this Project I created three classes: Execute; Team; Trainer.
 
-Included modifier; encapsulation; polymorphism and heritage.
+Included: modifier; encapsulation; polymorphism and inheritance.
 
-Done for College Project.
+Made for a college project.
 
